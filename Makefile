@@ -1,11 +1,11 @@
 all:
-	@rebar compile
+	@rebar3 compile
 
 check: all
-	@rebar eunit 2> /dev/null
+	@rebar3 eunit 2> /dev/null
 
 doc:
-	@rebar doc
+	@rebar3 edoc
 
 clean:
-	@rebar clean
+	@rebar3 clean
